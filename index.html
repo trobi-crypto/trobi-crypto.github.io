@@ -15,16 +15,18 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      
-<a-assets>
-    <a-asset-item id="girl" src="https://trobi-crypto.github.io/Assets/scifi_girl_v.01/scene.gltf"></a-asset-item>
-  </a-assets>
-  <a-entity gltf-model="#girl" scale="1 1 1" gps-entity-place="latitude: 50.204765; longitude: 9.115073;"></a-entity>  
-    
+      <a-text
+        value="This content will always face you."
+        look-at="[gps-camera]"
+        scale="50 50 50"
+        gps-entity-place="latitude: 50.204765; longitude: 9.115073;"
+      ></a-text>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
 </html>
+
+
     
 
 
